@@ -1,0 +1,167 @@
+2024-07-17 00:37:48,772 - waitress - INFO - Serving on http://0.0.0.0:8000
+2024-07-17 00:38:57,241 - waitress - INFO - Serving on http://0.0.0.0:8000
+2024-07-17 00:39:08,643 - __main__ - INFO - Form submitted with data: ImmutableMultiDict([('motor', 'Motor 1'), ('reagent', 'Reagent 1'), ('grams', '10')])
+2024-07-17 00:39:32,302 - __main__ - INFO - Form submitted with data: ImmutableMultiDict([('motor', 'Motor 1'), ('motor', 'Motor 1'), ('motor', 'Motor 1'), ('reagent', 'Reagent 1'), ('reagent', 'Reagent 1'), ('reagent', 'Reagent 1'), ('grams', '10'), ('grams', '11'), ('grams', '15')])
+2024-07-17 00:40:04,553 - __main__ - INFO - Form submitted with data: ImmutableMultiDict([('motor', 'Motor 1'), ('motor', 'Motor 2'), ('motor', 'Motor 3'), ('reagent', 'Reagent 1'), ('reagent', 'Reagent 4'), ('reagent', 'Reagent 5'), ('grams', '10'), ('grams', '102'), ('grams', '120')])
+2024-07-17 01:00:22,951 - waitress - INFO - Serving on http://0.0.0.0:8000
+2024-07-17 01:04:29,309 - waitress - INFO - Serving on http://0.0.0.0:8000
+2024-07-17 01:06:51,204 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor_name': 'Motor 3', 'reagent_name': 'Reagent 1', 'amount': '10'}]
+2024-07-17 01:06:51,205 - server - ERROR - Exception on /hydrogel [POST]
+Traceback (most recent call last):
+  File "/home/skylot/.local/lib/python3.11/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/skylot/.local/lib/python3.11/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/skylot/.local/lib/python3.11/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/skylot/.local/lib/python3.11/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/skylot/python/tests/nanox/server.py", line 23, in make_hydrogel
+    return jsonify({"message":"Data received", "data":data}), 200
+          ^^^^^^^
+NameError: name 'jsonify' is not defined
+2024-07-17 01:08:02,514 - waitress - INFO - Serving on http://0.0.0.0:8000
+2024-07-17 01:08:06,371 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor_name': 'Motor 3', 'reagent_name': 'Reagent 1', 'amount': '10'}]
+2024-07-17 01:08:10,769 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor_name': 'Motor 3', 'reagent_name': 'Reagent 1', 'amount': '10'}]
+2024-07-17 01:08:19,575 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor_name': 'Motor 2', 'reagent_name': 'Reagent 1', 'amount': '10'}, {'controller_name': 'Controller 2', 'motor_name': 'Motor 1', 'reagent_name': 'Reagent 1', 'amount': '15'}, {'controller_name': 'Controller 3', 'motor_name': 'Motor 1', 'reagent_name': 'Reagent 1', 'amount': '13'}]
+2024-07-17 01:15:37,753 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor_name': 'Motor 2', 'reagent_name': 'Reagent 1', 'amount': '10'}, {'controller_name': 'Controller 2', 'motor_name': 'Motor 1', 'reagent_name': 'Reagent 1', 'amount': '15'}, {'controller_name': 'Controller 3', 'motor_name': 'Motor 1', 'reagent_name': 'Reagent 1', 'amount': '13'}]
+2024-07-17 01:15:39,751 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor_name': 'Motor 2', 'reagent_name': 'Reagent 1', 'amount': '10'}, {'controller_name': 'Controller 2', 'motor_name': 'Motor 1', 'reagent_name': 'Reagent 1', 'amount': '15'}, {'controller_name': 'Controller 3', 'motor_name': 'Motor 1', 'reagent_name': 'Reagent 1', 'amount': '13'}]
+2024-07-17 01:15:42,051 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor_name': 'Motor 2', 'reagent_name': 'Reagent 1', 'amount': '10'}, {'controller_name': 'Controller 2', 'motor_name': 'Motor 1', 'reagent_name': 'Reagent 1', 'amount': '15'}, {'controller_name': 'Controller 3', 'motor_name': 'Motor 1', 'reagent_name': 'Reagent 1', 'amount': '13'}]
+2024-07-17 01:15:42,194 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor_name': 'Motor 2', 'reagent_name': 'Reagent 1', 'amount': '10'}, {'controller_name': 'Controller 2', 'motor_name': 'Motor 1', 'reagent_name': 'Reagent 1', 'amount': '15'}, {'controller_name': 'Controller 3', 'motor_name': 'Motor 1', 'reagent_name': 'Reagent 1', 'amount': '13'}]
+2024-07-25 06:29:08,210 - waitress - INFO - Serving on http://0.0.0.0:8000
+2024-08-31 11:47:54,821 - waitress - INFO - Serving on http://0.0.0.0:8000
+2024-08-31 11:49:09,754 - waitress - INFO - Serving on http://0.0.0.0:8000
+2024-08-31 11:49:28,780 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor_name': 'Motor 2', 'reagent_name': 'Reagent 1', 'amount': '232'}]
+2024-08-31 11:49:28,781 - __main__ - ERROR - Invalid motor ID None
+2024-08-31 11:52:00,009 - waitress - INFO - Serving on http://0.0.0.0:8000
+2024-08-31 11:52:05,973 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor_name': 'Motor 1', 'reagent_name': 'Reagent 1', 'amount': '232'}]
+2024-08-31 11:52:05,975 - __main__ - ERROR - Invalid motor ID None
+2024-08-31 11:52:20,088 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor_name': 'Motor 1', 'reagent_name': 'Reagent 1', 'amount': '232'}]
+2024-08-31 11:52:20,089 - __main__ - ERROR - Invalid motor ID None
+2024-08-31 11:52:32,792 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor_name': '1', 'reagent_name': 'Reagent 1', 'amount': '23'}]
+2024-08-31 11:52:32,793 - __main__ - ERROR - Invalid motor ID None
+2024-08-31 11:52:35,614 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor_name': '1', 'reagent_name': 'Reagent 1', 'amount': '23'}]
+2024-08-31 11:52:35,615 - __main__ - ERROR - Invalid motor ID None
+2024-08-31 11:52:35,797 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor_name': '1', 'reagent_name': 'Reagent 1', 'amount': '23'}]
+2024-08-31 11:52:35,798 - __main__ - ERROR - Invalid motor ID None
+2024-08-31 11:54:09,679 - waitress - INFO - Serving on http://0.0.0.0:8000
+2024-08-31 11:54:38,719 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor': '1', 'reagent_name': 'Reagent 1', 'amount': '32'}]
+2024-08-31 11:54:38,720 - __main__ - ERROR - Invalid motor ID 1
+2024-08-31 12:03:17,685 - waitress - INFO - Serving on http://0.0.0.0:8000
+2024-08-31 12:03:27,643 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor': '1', 'reagent_name': 'Reagent 1', 'amount': '32'}]
+2024-08-31 12:03:27,644 - __main__ - INFO - Moving motor 1 to 0 degrees for 0 grams
+2024-08-31 12:03:41,775 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor': '1', 'reagent_name': 'Reagent 1', 'amount': '32'}]
+2024-08-31 12:03:41,776 - __main__ - INFO - Moving motor 1 to 0 degrees for 0 grams
+2024-08-31 12:03:45,056 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor': '1', 'reagent_name': 'Reagent 1', 'amount': '32'}]
+2024-08-31 12:03:45,057 - __main__ - INFO - Moving motor 1 to 0 degrees for 0 grams
+2024-08-31 12:03:52,177 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor': '1', 'reagent_name': 'Reagent 1', 'amount': '60'}]
+2024-08-31 12:03:52,178 - __main__ - INFO - Moving motor 1 to 0 degrees for 0 grams
+2024-08-31 12:03:57,128 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor': '1', 'reagent_name': 'Reagent 1', 'amount': '60'}]
+2024-08-31 12:03:57,129 - __main__ - INFO - Moving motor 1 to 0 degrees for 0 grams
+2024-08-31 12:04:02,517 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor': '1', 'reagent_name': 'Reagent 1', 'amount': '150'}]
+2024-08-31 12:04:02,518 - __main__ - INFO - Moving motor 1 to 0 degrees for 0 grams
+2024-08-31 12:04:09,764 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor': '1', 'reagent_name': 'Reagent 1', 'amount': '50000'}]
+2024-08-31 12:04:09,765 - __main__ - INFO - Moving motor 1 to 0 degrees for 0 grams
+2024-08-31 12:04:17,034 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor': '1', 'reagent_name': 'Reagent 1', 'amount': '5000010'}]
+2024-08-31 12:04:17,035 - __main__ - INFO - Moving motor 1 to 0 degrees for 0 grams
+2024-08-31 12:04:21,347 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor': '1', 'reagent_name': 'Reagent 1', 'amount': '10'}]
+2024-08-31 12:04:21,348 - __main__ - INFO - Moving motor 1 to 0 degrees for 0 grams
+2024-08-31 13:24:48,350 - waitress - INFO - Serving on http://0.0.0.0:8000
+2024-08-31 13:24:55,345 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor': '1', 'reagent_name': 'Reagent 1', 'amount': '10'}]
+2024-08-31 13:24:55,346 - __main__ - ERROR - Invalid motor ID 1
+2024-08-31 13:26:31,439 - waitress - INFO - Serving on http://0.0.0.0:8000
+2024-08-31 13:26:38,018 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor': '1', 'reagent_name': 'Reagent 1', 'amount': '2'}]
+2024-08-31 13:26:38,057 - __main__ - ERROR - [TxRxResult] There is no status packet!
+2024-08-31 13:26:38,058 - __main__ - INFO - Moving motor 1 to 0 (adding 0 degrees) for 0 grams
+2024-08-31 13:26:38,096 - __main__ - ERROR - [TxRxResult] There is no status packet!
+2024-08-31 13:27:00,626 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor': '1', 'reagent_name': 'Reagent 1', 'amount': '2'}]
+2024-08-31 13:27:00,647 - __main__ - INFO - Moving motor 1 to 1 (adding 0 degrees) for 0 grams
+2024-08-31 13:28:12,905 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor': '1', 'reagent_name': 'Reagent 1', 'amount': '1'}]
+2024-08-31 13:28:12,917 - __main__ - INFO - Moving motor 1 to 1 (adding 0 degrees) for 0 grams
+2024-08-31 13:29:21,230 - waitress - INFO - Serving on http://0.0.0.0:8000
+2024-08-31 13:29:24,788 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor': '1', 'reagent_name': 'Reagent 1', 'amount': '1'}]
+2024-08-31 13:29:24,799 - __main__ - INFO - Moving motor 1 to 1 (adding 0 degrees) for 0 grams
+2024-08-31 13:29:29,064 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor': '1', 'reagent_name': 'Reagent 1', 'amount': '1'}]
+2024-08-31 13:29:29,086 - __main__ - INFO - Moving motor 1 to 1 (adding 0 degrees) for 0 grams
+2024-08-31 13:29:29,597 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor': '1', 'reagent_name': 'Reagent 1', 'amount': '1'}]
+2024-08-31 13:29:29,614 - __main__ - INFO - Moving motor 1 to 1 (adding 0 degrees) for 0 grams
+2024-08-31 13:29:29,789 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor': '1', 'reagent_name': 'Reagent 1', 'amount': '1'}]
+2024-08-31 13:29:29,806 - __main__ - INFO - Moving motor 1 to 1 (adding 0 degrees) for 0 grams
+2024-08-31 13:29:30,275 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor': '1', 'reagent_name': 'Reagent 1', 'amount': '1'}]
+2024-08-31 13:29:30,286 - __main__ - INFO - Moving motor 1 to 1 (adding 0 degrees) for 0 grams
+2024-08-31 13:29:30,312 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor': '1', 'reagent_name': 'Reagent 1', 'amount': '1'}]
+2024-08-31 13:29:30,334 - __main__ - INFO - Moving motor 1 to 1 (adding 0 degrees) for 0 grams
+2024-08-31 13:29:30,361 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor': '1', 'reagent_name': 'Reagent 1', 'amount': '1'}]
+2024-08-31 13:29:30,383 - __main__ - INFO - Moving motor 1 to 1 (adding 0 degrees) for 0 grams
+2024-08-31 13:29:30,400 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor': '1', 'reagent_name': 'Reagent 1', 'amount': '1'}]
+2024-08-31 13:29:30,415 - __main__ - INFO - Moving motor 1 to 0 (adding 0 degrees) for 0 grams
+2024-08-31 13:29:30,432 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor': '1', 'reagent_name': 'Reagent 1', 'amount': '1'}]
+2024-08-31 13:29:30,447 - __main__ - INFO - Moving motor 1 to 1 (adding 0 degrees) for 0 grams
+2024-08-31 13:29:30,450 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor': '1', 'reagent_name': 'Reagent 1', 'amount': '1'}]
+2024-08-31 13:29:30,452 - __main__ - ERROR - [TxRxResult] Port is in use!
+2024-08-31 13:29:30,462 - __main__ - INFO - Moving motor 1 to 0 (adding 0 degrees) for 0 grams
+2024-08-31 13:30:03,392 - waitress - INFO - Serving on http://0.0.0.0:8000
+2024-08-31 13:30:47,439 - waitress - INFO - Serving on http://0.0.0.0:8000
+2024-08-31 13:30:50,773 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor': '1', 'reagent_name': 'Reagent 1', 'amount': '1'}]
+2024-08-31 13:30:50,783 - __main__ - INFO - Moving motor 1 to 23 (adding 2 degrees) for 1 grams
+2024-08-31 13:30:58,556 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor': '1', 'reagent_name': 'Reagent 1', 'amount': '100'}]
+2024-08-31 13:30:58,575 - __main__ - INFO - Moving motor 1 to 2297 (adding 200 degrees) for 100 grams
+2024-08-31 13:31:04,392 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor': '1', 'reagent_name': 'Reagent 1', 'amount': '100'}]
+2024-08-31 13:31:04,414 - __main__ - INFO - Moving motor 1 to 4571 (adding 200 degrees) for 100 grams
+2024-08-31 13:31:07,454 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor': '1', 'reagent_name': 'Reagent 1', 'amount': '100'}]
+2024-08-31 13:31:07,470 - __main__ - INFO - Moving motor 1 to 6845 (adding 200 degrees) for 100 grams
+2024-08-31 13:33:03,020 - waitress - INFO - Serving on http://0.0.0.0:8000
+2024-08-31 13:33:07,210 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor': '1', 'reagent_name': 'Reagent 1', 'amount': '100'}]
+2024-08-31 13:33:07,228 - __main__ - INFO - Moving motor 1 to 1713094 (adding 150000 degrees) for 100 grams
+2024-08-31 13:33:07,244 - __main__ - ERROR - [RxPacketError] The data value is out of range!
+2024-08-31 13:34:02,762 - waitress - INFO - Serving on http://0.0.0.0:8000
+2024-08-31 13:34:06,035 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor': '1', 'reagent_name': 'Reagent 1', 'amount': '10'}]
+2024-08-31 13:34:06,058 - __main__ - INFO - Moving motor 1 to 23906 (adding 1500 degrees) for 10 grams
+2024-08-31 13:34:20,209 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor': '1', 'reagent_name': 'Reagent 1', 'amount': '10'}]
+2024-08-31 13:34:20,233 - __main__ - INFO - Moving motor 1 to 40967 (adding 1500 degrees) for 10 grams
+2024-08-31 13:34:27,596 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor': '1', 'reagent_name': 'Reagent 1', 'amount': '-10'}]
+2024-08-31 13:34:27,609 - __main__ - INFO - Moving motor 1 to 23904 (adding -1500 degrees) for -10 grams
+2024-08-31 13:34:40,348 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor': '1', 'reagent_name': 'Reagent 1', 'amount': '-10'}]
+2024-08-31 13:34:40,360 - __main__ - INFO - Moving motor 1 to 6843 (adding -1500 degrees) for -10 grams
+2024-09-11 11:00:45,827 - waitress - INFO - Serving on http://0.0.0.0:8000
+2024-09-11 11:28:01,533 - waitress - INFO - Serving on http://0.0.0.0:8000
+2024-09-11 11:28:57,297 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor': '1', 'reagent_name': 'Reagent 1', 'amount': '10'}]
+2024-09-11 11:28:57,307 - __main__ - INFO - Moving motor 1 to 19810 (adding 1500 degrees) for 10 grams
+2024-09-11 11:29:08,446 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor': '1', 'reagent_name': 'Reagent 1', 'amount': '10'}]
+2024-09-11 11:29:08,459 - __main__ - INFO - Moving motor 1 to 36871 (adding 1500 degrees) for 10 grams
+2024-09-11 11:29:17,792 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor': '1', 'reagent_name': 'Reagent 1', 'amount': '-10'}]
+2024-09-11 11:29:17,802 - __main__ - INFO - Moving motor 1 to 19808 (adding -1500 degrees) for -10 grams
+2024-09-11 11:29:28,013 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor': '1', 'reagent_name': 'Reagent 1', 'amount': '-10'}]
+2024-09-11 11:29:28,026 - __main__ - INFO - Moving motor 1 to 2747 (adding -1500 degrees) for -10 grams
+2024-09-11 11:29:42,127 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor': '1', 'reagent_name': 'Reagent 1', 'amount': '-1000'}]
+2024-09-11 11:29:42,137 - __main__ - INFO - Moving motor 1 to -1703502 (adding -150000 degrees) for -1000 grams
+2024-09-11 11:29:42,153 - __main__ - ERROR - [RxPacketError] The data value is out of range!
+2024-09-11 11:29:47,334 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor': '1', 'reagent_name': 'Reagent 1', 'amount': '-1000'}]
+2024-09-11 11:29:47,352 - __main__ - INFO - Moving motor 1 to -1703502 (adding -150000 degrees) for -1000 grams
+2024-09-11 11:29:47,368 - __main__ - ERROR - [RxPacketError] The data value is out of range!
+2024-09-11 11:29:51,611 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor': '1', 'reagent_name': 'Reagent 1', 'amount': '-100'}]
+2024-09-11 11:29:51,624 - __main__ - INFO - Moving motor 1 to -167877 (adding -15000 degrees) for -100 grams
+2024-09-11 11:30:50,442 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor': '2', 'reagent_name': 'Reagent 1', 'amount': '-100'}]
+2024-09-11 11:30:50,453 - __main__ - INFO - Moving motor 2 to -167649 (adding -15000 degrees) for -100 grams
+2024-09-11 11:31:02,013 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor': '3', 'reagent_name': 'Reagent 1', 'amount': '-100'}]
+2024-09-11 11:31:02,014 - __main__ - ERROR - Invalid motor ID 3
+2024-09-11 11:31:09,420 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor': '3', 'reagent_name': 'Reagent 1', 'amount': '-100'}]
+2024-09-11 11:31:09,421 - __main__ - ERROR - Invalid motor ID 3
+2024-09-11 11:31:33,192 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor': '3', 'reagent_name': 'Reagent 1', 'amount': '-100'}]
+2024-09-11 11:31:33,193 - __main__ - ERROR - Invalid motor ID 3
+2024-09-11 11:32:56,925 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor': '1', 'reagent_name': 'Reagent 1', 'amount': '-100'}]
+2024-09-11 11:32:56,942 - __main__ - INFO - Moving motor 1 to 4294628795 (adding -15000 degrees) for -100 grams
+2024-09-11 11:34:23,451 - waitress - INFO - Serving on http://0.0.0.0:8000
+2024-09-11 11:35:16,356 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor': '1', 'reagent_name': 'Reagent 1', 'amount': '-10'}]
+2024-09-11 11:35:16,376 - __main__ - INFO - Moving motor 0 to -169575 (adding -15000 degrees) for -10 grams
+2024-09-11 11:36:21,415 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor': '2', 'reagent_name': 'Reagent 1', 'amount': '-10'}]
+2024-09-11 11:36:21,429 - __main__ - INFO - Moving motor 1 to 4294458171 (adding -15000 degrees) for -10 grams
+2024-09-11 12:09:40,393 - waitress - INFO - Serving on http://0.0.0.0:8000
+2024-09-11 12:11:09,383 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor': '1', 'reagent_name': 'Reagent 1', 'amount': '-10'}]
+2024-09-11 12:11:09,397 - __main__ - INFO - Moving motor 0 to 4294627095 (adding -15000 degrees) for -10 grams
+2024-09-11 12:12:43,839 - __main__ - INFO - Form submitted with data: [{'controller_name': 'Controller 1', 'motor': '1', 'reagent_name': 'Reagent 1', 'amount': '-2'}]
+2024-09-11 12:12:43,856 - __main__ - INFO - Moving motor 0 to 4294592970 (adding -3000 degrees) for -2 grams
